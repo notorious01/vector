@@ -69,9 +69,9 @@ auto vector_t::push_back(int value) -> void
 }
 auto vector_t::delval() -> bool
 {
-	if (capacity_ == 0)
+	if (size_ == 0)
 		return 0;
-	if (capacity_ >= 2*size)
+	if (capacity_ >= 2*size_)
 	{
 		capacity_ = capacity_/2;
 		int *ptr1 = new int[capacity_];
