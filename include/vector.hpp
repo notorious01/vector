@@ -16,5 +16,6 @@ public:
     auto size() const noexcept -> unsigned int;
     auto capacity() const noexcept -> unsigned int;
     auto push_back(int value) -> void;
+    auto delval() -> bool;
     auto operator[](unsigned int index) const noexcept -> int;
 };
